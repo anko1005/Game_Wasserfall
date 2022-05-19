@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterfallBase_Mtl
+  m_Shader: {fileID: -6465566751694194690, guid: 150f62a8029a1974a8d4349f3a3693d5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2DAsset_0e07877463bf4de5a1d95714669ae107_Out_0:
+        m_Texture: {fileID: 2800000, guid: f719646d707cf0e48848212808567a41, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_293eaddad813452c8afcea571b5e625a: 0
+    - Vector1_4e5866d2eff044249be90a496be933e0: 1
+    - Vector1_52a5497607054bcf9c51e61458e03655: 0
+    - Vector1_bbba23e6ead340a1bfbf39c44b1ad404: 2
+    - Vector1_bdb617fbfd2c48d2ae4c3648fb594cd4: 1.93
+    - Vector1_c5968a66b2e44d99927897c86e82fcd4: 0
+    m_Colors:
+    - Color_59d1eba84dc2446385106e773479b066: {r: 0.23905301, g: 0.4811321, b: 0.4649935, a: 1}
+    - Color_70a972520c104541af2af5fd0f14e08d: {r: 0.4476385, g: 0.745283, b: 0.70247763, a: 1}
+    - Color_804adf4e81da478f92d096bd6284b3c1: {r: 1, g: 1, b: 1, a: 0}
+    - Color_a61ba699ac244605aee336b34613a981: {r: 0.45523316, g: 0.8170208, b: 0.9339623, a: 1}
+    - Vector2_4bc1fd84df3d4c6aa70bb5c08e54f9f3: {r: 1, g: 0, b: 0, a: 0}
+    - Vector2_8de124299ac84fcfb2dd2701c8bf80da: {r: 0.8, g: 0, b: 0, a: 0}
+    - Vector2_b42b4d2862074e1086e06263808778f5: {r: 1, g: 0, b: 0, a: 0}
+    - Vector2_b8249b63c2564b5c8e12685935090c45: {r: 0.4, g: 0, b: 0, a: 0}
+    - Vector2_d382c7d695814ae1b0b424a7ef5100b2: {r: 1, g: 6, b: 0, a: 0}
+  m_BuildTextureStacks: []
