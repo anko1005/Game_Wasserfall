@@ -34,11 +34,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(prefab, new Vector3(0.91f, 6.78f, -56.82145f), Quaternion.identity);
         }
-        if (obstaclePos == 4)
-        {
-            Instantiate(prefab, new Vector3(0.91f, 6.78f, -56.82145f), Quaternion.identity);
-        }
-        obstaclePos = Random.Range(1, 6);
+        obstaclePos = Random.Range(1, 4);
         
     }
 }
