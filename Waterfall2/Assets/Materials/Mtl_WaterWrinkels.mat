@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterWrinkels_Mtl
+  m_Name: Mtl_WaterWrinkels
   m_Shader: {fileID: -6465566751694194690, guid: 736e8709d2daf8e49ad7b16b8af012b7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
