@@ -12,19 +12,20 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         obstaclePos = 1;
-        InvokeRepeating("Spawn", 1,5);
+        InvokeRepeating("Spawn", 1, 5);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void Spawn()
     {
         obstaclePos = Random.Range(0, SpawnPositions.Length);
-        Instantiate(prefab, SpawnPositions[obstaclePos].position, Quaternion.identity);  
+        Instantiate(prefab, SpawnPositions[obstaclePos].position, Quaternion.identity);
     }
 }
+
 

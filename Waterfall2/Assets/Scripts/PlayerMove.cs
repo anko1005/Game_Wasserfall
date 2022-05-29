@@ -26,7 +26,7 @@ public class PlayerMove : MonoBehaviour
         {
             if (row<2)
             {
-                controller.Move(new Vector3(1.75f, 0,0));
+                controller.Move(new Vector3(2.2f, 0,0));
                 row++;
             }
         }
@@ -34,7 +34,7 @@ public class PlayerMove : MonoBehaviour
         {
             if (row > -2)
             {
-                controller.Move(new Vector3(-1.75f,0,0));
+                controller.Move(new Vector3(-2.2f,0,0));
                 row--;
             }
         }
