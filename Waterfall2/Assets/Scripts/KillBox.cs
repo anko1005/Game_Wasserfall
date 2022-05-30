@@ -10,5 +10,7 @@ public class KillBox : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        
+        
     }
 }
