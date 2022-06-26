@@ -39,5 +39,11 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
-    
+    /*on ControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.transform.tag == "Obstacle")
+        {
+            Playermanager.gameOver = true;
+        }
+    }*/
 }
