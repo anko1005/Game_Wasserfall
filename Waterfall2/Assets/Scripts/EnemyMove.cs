@@ -6,6 +6,7 @@ public class EnemyMove : MonoBehaviour
 {
     [Range(1f, 20f)]
     public float Speed = 10f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class EnemyMove : MonoBehaviour
         MoveForward();
         //if (this.transform.position.z > 20)
         //    Destroy(gameObject);
+        //forwardSpeed += 0.1f * Time.deltaTime; (wird schneller?)
     }
 
     void MoveForward()
@@ -30,4 +32,6 @@ public class EnemyMove : MonoBehaviour
         // 3) Reminder: Wenn man das Objekt in FixedUpdate bewegt, dann muss man auch Time.fixedDeltaTime verwenden.
         transform.position = transform.position + new Vector3(0, 0, Speed * Time.deltaTime);
     }
+
+
 }
