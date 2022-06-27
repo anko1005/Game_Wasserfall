@@ -18,10 +18,15 @@ public class EnemyMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveForward();
+        //MoveForward();
         //if (this.transform.position.z > 20)
         //    Destroy(gameObject);
         //forwardSpeed += 0.1f * Time.deltaTime; (wird schneller?)
+    }
+
+    void FixedUpdate()
+    {
+        MoveForward();
     }
 
     void MoveForward()
