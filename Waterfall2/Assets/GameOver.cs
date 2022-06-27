@@ -24,3 +24,4 @@ public class GameOverScreen : MonoBehaviour
         SceneManager.loadScene("MainMenu");
     }
 }*/
+}

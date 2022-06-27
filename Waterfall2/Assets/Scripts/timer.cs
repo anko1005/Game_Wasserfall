@@ -1,8 +1,9 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
@@ -43,9 +44,9 @@ public class timer : MonoBehaviour
     {
         if (healthAmount <= 0)
             {
-               ApplicationException.LoadGameOverScreen ;
+               SceneManager.loadScene("GameOverScreen"); ;
             }
         
         stopwatchActive = false;
-    }
+    }*/
 }
