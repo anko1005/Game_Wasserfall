@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMove : MonoBehaviour
 {
     private int row;
@@ -39,11 +40,16 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
-    /*on ControllerColliderHit(ControllerColliderHit hit)
+    on ControllerColliderHit(ControllerColliderHit hit)
     {
         if(hit.transform.tag == "Obstacle")
         {
-            Playermanager.gameOver = true;
+            
+            transform.position = transform.position + Vector3 (0,0, - 2.2f);
+            //1 Schritt nach hinten versetzen
         }
-    }*/
+    }
+    //Playermanager.gameOver = true;
+
+    
 }

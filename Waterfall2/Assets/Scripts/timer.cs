@@ -41,6 +41,11 @@ public class timer : MonoBehaviour
 
     public void StopStopwatch()
     {
+        if (healthAmount <= 0)
+            {
+               ApplicationException.LoadGameOverScreen ;
+            }
+        
         stopwatchActive = false;
     }
 }

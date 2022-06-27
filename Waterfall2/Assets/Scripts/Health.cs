@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public Image healthBar;
-    public float health Amount = 3;
+    public float healthAmount = 3;
 
     private void Update()
     {
@@ -14,11 +14,25 @@ public class Health : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
-
-        /*if (collsion) 
+        on ControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.transform.tag == "Obstacle")
+            {
+                healthAmount = healthAmount -  1;
+            }
+        }
+        on ControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.transform.tag == "Health")
+            {
+                healthAmount = healthAmount + 1;
+            }
+        }
+        /*if (collsiontag Obsticle) collsiononEnter?
          //baumstamm 1 leben weg
         {
             TakeDamage(1);
+        
         }
 
         if(collsion)
