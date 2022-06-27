@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1
-  m_Shader: {fileID: -6465566751694194690, guid: ec4feaabbdf37b84695168f9d54b2318, type: 3}
+  m_Name: WolkenMtl
+  m_Shader: {fileID: -6465566751694194690, guid: d13c73716568e4c4b90193f0e675b38e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -76,6 +76,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_220e2c1a23084fd7b1cd7db287af413f: 1.67
+    - Vector1_28cb97929fdb4775ae58f19567833b63: 4.13
+    - Vector1_79dd61ae96bc43629ea9b13cc00f8fa8: 59.65
+    - Vector1_a37e5304745d49eeb49507235c75b3b0: 0.5
+    - Vector1_aaa48cf32db247c587cb60dbf643f34f: 63.1
+    - Vector1_cfa466433a684015b93d83d75364a9de: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -103,14 +109,15 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_6feda17f637c42ba9b1f347884b58fc1: {r: 0.37647057, g: 0.98039216, b: 0.9647059, a: 0}
-    - Color_747f4a37c2434463a4afbef55f335a5b: {r: 0.75471693, g: 0.40452036, b: 0.24563897, a: 0}
+    - Color_eef90116f1b84667a599b97081dacc35: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_29f49365bc1845a5af63a191ab55e4cb: {r: 0.025, g: 0.025, b: 0, a: 0}
+    - Vector2_f50b928b0aa84486ba29882ca67cdeda: {r: 0.025, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &5186328746605006704
+--- !u!114 &5817978370403793475
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

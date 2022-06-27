@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SkyBoxMtl
-  m_Shader: {fileID: -6465566751694194690, guid: ec4feaabbdf37b84695168f9d54b2318, type: 3}
+  m_Name: SkyBoxMtlSterne
+  m_Shader: {fileID: -6465566751694194690, guid: 5f774b4da20e3cb45ba4d1c27d877b37, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -76,6 +76,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_bdb449035bb640ca91c55e0fce4f4a4d: 7.51
+    - Vector1_c108626571e349be810952ab1a9ebbf1: 15
+    - Vector1_cc72f237d0b74caa8decb5a0bcc0f349: 26.6
+    - Vector1_e93df623949c409d98c32b0e8da3e975: 2.67
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -103,14 +107,16 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_6feda17f637c42ba9b1f347884b58fc1: {r: 0.37486652, g: 0.9811321, b: 0.9638553, a: 1}
-    - Color_747f4a37c2434463a4afbef55f335a5b: {r: 0.75471693, g: 0.40452036, b: 0.24563897, a: 0}
+    - Color_b990493d4df04b94a1780f9979e36e31: {r: 0, g: 0.5399469, b: 0.6226415, a: 0}
+    - Color_e239294131aa4e439c3202badf33e4c8: {r: 0.38861695, g: 0.62200826, b: 0.6698113, a: 1}
+    - Vector2_04e8041ac6e14f9d9ed6f4de7196e3df: {r: 8, g: 4, b: 0, a: 0}
+    - Vector2_e6c6b79bbd414376a100862de0ee4c56: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &4544290607061302172
+--- !u!114 &188481435472349771
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
