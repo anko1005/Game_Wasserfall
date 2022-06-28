@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
-        on ControllerColliderHit(ControllerColliderHit hit)
+        /*on ControllerColliderHit(ControllerColliderHit hit)
         {
             if (hit.transform.tag == "Obstacle")
             {
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
             {
                 healthAmount = healthAmount + 1;
             }
-        }
+        }*/
         /*if (collsiontag Obsticle) collsiononEnter?
          //baumstamm 1 leben weg
         {

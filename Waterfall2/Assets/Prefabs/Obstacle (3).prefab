@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 623448149504662391}
   - component: {fileID: -3527217273934705647}
   - component: {fileID: 7532497531604011404}
+  - component: {fileID: 8053418364706806098}
   - component: {fileID: 4135211310069022226}
   m_Layer: 0
   m_Name: Obstacle (3)
@@ -112,7 +113,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f0def3deccb4446a696a7443697346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
+  _moveSpeed: 10
+  _inputHorizontal: 0
+--- !u!114 &8053418364706806098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623448149504662385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b9835efd36167429db828601897147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &4135211310069022226
 BoxCollider:
   m_ObjectHideFlags: 0

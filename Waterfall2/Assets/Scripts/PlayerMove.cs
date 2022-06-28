@@ -8,11 +8,15 @@ public class PlayerMove : MonoBehaviour
     private int row;
     public CharacterController controller;
     public GameObject swipeManager;
+
+    Vector3 startPos;
+    public Vector3 playerPos = new Vector3(0f,0f,0f);
     
     // Start is called before the first frame update
     void Start()
     {
         row = 0;
+        startPos = transform.position;
     }
 
     // Update is called once per frame
@@ -28,6 +32,7 @@ public class PlayerMove : MonoBehaviour
             if (row<2)
             {
                 controller.Move(new Vector3(2.2f, 0,0));
+                //playerPos += new Vector3(2.2f, 0f, 0f);
                 row++;
             }
         }
@@ -40,14 +45,26 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
-    on ControllerColliderHit(ControllerColliderHit hit)
+
+    //private void FixedUpdate()
+    //{
+    //    MovePlayer();
+    //}
+
+    void MovePlayer()
     {
-        if(hit.transform.tag == "Obstacle")
-        {
-            
-            transform.position = transform.position + Vector3 (0,0, - 2.2f);
-            //1 Schritt nach hinten versetzen
-        }
+        controller.Move(
+            Vector3.Lerp(
+                transform.position, 
+                startPos + playerPos, 
+                Time.fixedDeltaTime * 5f));
+    }
+
+    public void ObstacleHit()
+    {
+        controller.Move(new Vector3(0f, 0f, -1f));
+        //playerPos -= new Vector3()...
+        //if(playerPos.z < -5f) ... -> gameOver
     }
     //Playermanager.gameOver = true;
 
