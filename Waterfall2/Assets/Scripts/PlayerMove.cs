@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
 {
     //private int row;
     public CharacterController controller;
+    Rigidbody rb;
     public GameObject swipeManager;
 
     Vector3 startPos;
@@ -48,6 +49,15 @@ public class PlayerMove : MonoBehaviour
                 //row--;
                 playerPos += new Vector3(-2.2f, 0f, 0f);
                 
+            }*/
+            /*if (_inputHorizontal != 0)
+            {
+                _rb.velocity = _currentVelocity;
+            }
+            else
+            {
+                _currentVelocity = new Vector3(0f, 0f);
+                _rb.velocity = _currentVelocity;
             }*/
         }
     }
