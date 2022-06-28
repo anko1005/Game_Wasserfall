@@ -5,51 +5,58 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private int row;
+    //private int row;
     public CharacterController controller;
     public GameObject swipeManager;
 
     Vector3 startPos;
-    public Vector3 playerPos = new Vector3(0f,0f,0f);
+    public Vector3 playerPos = new Vector3(-1.06f, 1.05f,14.45f);
     
-    // Start is called before the first frame update
     void Start()
     {
-        row = 0;
-        startPos = transform.position;
+        //row = 0;
+        startPos = playerPos;
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
+        
         MoveLeftRight();
-    }
+    }*/
+
+    
 
     void MoveLeftRight()
     {
         if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))
-        {
-            if (row<2)
+        {            
+            playerPos += new Vector3(2.2f, 0f, 0f);
+           
+            /*if (new Vector)
             {
                 controller.Move(new Vector3(2.2f, 0,0));
-                //playerPos += new Vector3(2.2f, 0f, 0f);
-                row++;
-            }
+                row++;                               
+            }*/
         }
         if (SwipeManager.swipeRight||Input.GetKeyDown("right"))
         {
-            if (row > -2)
+            playerPos += new Vector3(-2.2f, 0f, 0f);
+            /*if (row > -2)
             {
-                controller.Move(new Vector3(-2.2f,0,0));
-                row--;
-            }
+                //controller.Move(new Vector3(-2.2f,0,0));
+                //row--;
+                playerPos += new Vector3(-2.2f, 0f, 0f);
+                
+            }*/
         }
     }
 
-    //private void FixedUpdate()
-    //{
-    //    MovePlayer();
-    //}
+    private void FixedUpdate()
+    {
+        MoveLeftRight();
+        MovePlayer();
+    }
 
     void MovePlayer()
     {
