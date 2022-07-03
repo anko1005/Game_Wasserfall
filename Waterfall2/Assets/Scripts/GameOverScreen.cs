@@ -1,26 +1,27 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class GameOverScreen : MonoBehaviour
 {
-    public Text Timescore;
+    /*public Text Timescore;
 
     public void Setup(int score)
     {
         gameObject.setActive(true)
         Timescore.text = score.ToString() + "Timescore";
 
+    }*/
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene("Level_1");/*SceneManager.GetActiveScene().buildIndex + 1); falls wir mehr szenen haben*/
     }
 
-    public void ReplayButton()
+    public void BackMainMenu()
     {
-        SceneManager.loadScene("Level1");
+        SceneManager.LoadScene("UI_MainMenu");
     }
-
-    public void QuitButton()
-    {
-        SceneManager.loadScene("MainMenu");
-    }
-}*/
+}
