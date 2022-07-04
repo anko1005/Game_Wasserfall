@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playermanager : MonoBehaviour
 {
-    public static bool gameOver;
+   /* public static bool gameOver;
     public GameObject gameOverPanel;
 
     void Start()
@@ -23,8 +23,6 @@ public class Playermanager : MonoBehaviour
             gameOverPanel.SetActive(true);
         }
 
-        /*für GameOverPanel - TilesManager einbinden? Bei Tile "3"? activate GameOverPanel?*/
-            
-        
-    }
+              
+    }*/
 }

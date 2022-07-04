@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerMove : MonoBehaviour
@@ -43,6 +44,7 @@ public class PlayerMove : MonoBehaviour
         if (SwipeManager.swipeRight||Input.GetKeyDown("right"))
         {
             playerPos += new Vector3(-2.2f, 0f, 0f);
+
             /*if (row > -2)
             {
                 //controller.Move(new Vector3(-2.2f,0,0));
@@ -79,11 +81,19 @@ public class PlayerMove : MonoBehaviour
 
     public void ObstacleHit()
     {
-        controller.Move(new Vector3(0f, 0f, -1f));
-        //playerPos -= new Vector3()...
-        //if(playerPos.z < -5f) ... -> gameOver
+        print("obstacle");
+        //controller.Move(new Vector3(0f, 0f, -1f));
+        playerPos -= new Vector3(0f, 0f, -1f);
+
+        if(playerPos.z < -5f)
+        {
+            SceneManager.LoadScene("UI_GameOver");
+            //Playermanager.gameOver = true;
+        }
+        
+
     }
-    //Playermanager.gameOver = true;
+    
 
     
 }
