@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class GameOverScreen : MonoBehaviour
+public class UI_GameOverScreen : MonoBehaviour
 {
     /*public Text Timescore;
 

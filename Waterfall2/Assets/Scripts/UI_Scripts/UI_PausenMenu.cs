@@ -10,7 +10,6 @@ public class UI_PausenMenu: MonoBehaviour
     public GameObject UI_Pause;
 
     
-    
     public void Resume ()
     {
         UI_Pause.SetActive(false);
