@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCollision : MonoBehaviour 
+public class EnemyCollision : MonoBehaviour
 {
     bool notHit = true;
 
@@ -10,11 +10,12 @@ public class EnemyCollision : MonoBehaviour
     {
         if (notHit == true)
         {
-            if (collision.gameObject.CompareTag("Player"))
+            if (collision.gameObject.CompareTag("Player")) // Tag muss in Unity gesetzt werden!
             {
                 notHit = false;
+                collision.gameObject.GetComponent<PlayerMove>().ObstacleHit();
             }
         }
-        
+
     }
 }
