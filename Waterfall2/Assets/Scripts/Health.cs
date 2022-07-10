@@ -11,10 +11,10 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if(healthAmount <= 0)
+        /*if(healthAmount <= 0)
         {
             SceneManager.LoadScene("Gameover");
-        }
+        }*/
         /*on ControllerColliderHit(ControllerColliderHit hit)
         {
             if (hit.transform.tag == "Obstacle")
@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
         if(collsion)
         {
             Healing(1);
-        }*/
+        }
     }
 
     public void TakeDamage(float Damage)
@@ -52,5 +52,5 @@ public class Health : MonoBehaviour
     {
         healthAmount += healPoints;
         healthAmount = Mathf.Clamp(healthAmount, 0, 3);
-    }
+    }*/
 }

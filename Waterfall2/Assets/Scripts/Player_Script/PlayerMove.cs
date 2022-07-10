@@ -11,6 +11,10 @@ public class PlayerMove : MonoBehaviour
     private Vector3 currentPlayerPos;
     private int hits = 0;
     private int row = 3;
+    //public Image healthBar;
+    public int healthAmount = 0;
+
+    public static bool GameIsPaused = false;
 
     void Start()
     {
@@ -67,6 +71,17 @@ public class PlayerMove : MonoBehaviour
         if(hits == 3)
         {
             SceneManager.LoadScene("UI_GameOver");
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
+    }
+
+    public void Healing()
+    {
+        
+        if (hit.transform.tag == "Health")
+        {
+            healthAmount = healthAmount ++;
         }
     }
 }
