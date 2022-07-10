@@ -76,12 +76,12 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    public void Healing()
+   /* public void Healing()
     {
         
         if (hit.transform.tag == "Health")
         {
             healthAmount = healthAmount ++;
         }
-    }
+    }*/
 }
