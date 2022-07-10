@@ -14,6 +14,7 @@ public class EnemyCollision : MonoBehaviour
             {
                 notHit = false;
                 collision.gameObject.GetComponent<PlayerMove>().ObstacleHit();
+                Destroy(this.gameObject);
             }
         }
 
