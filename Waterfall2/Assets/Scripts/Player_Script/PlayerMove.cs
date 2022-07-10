@@ -4,12 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    //Geschwindigkeit des Spielers
-    public float playerSpeed = 8f;
+ //Geschwindigkeit des Spielers
+    public float playerSpeed = 0.2f;
 
     private Vector3 startPos;
     private Vector3 currentPlayerPos;
     private int hits = 0;
+    private int row = 3;
 
     void Start()
     {
@@ -23,20 +24,32 @@ public class PlayerMove : MonoBehaviour
         MovePlayer();
     }
 
-    //Spielweise Swipen (touch input) (rechts/links)
+ /*
+ Spielweise Swipen (touch input) (rechts/links)
+ gleichzeitig einschränungen auf die rows +/- ,
+ dass der Player nicht über den Fluss hinaus fährt
+ */
     void LeftRightInput()
     {
         if (SwipeManager.swipeLeft || Input.GetKeyDown("left"))
         {
-            currentPlayerPos += new Vector3(2.2f, 0f, 0f);
+            if (row > 1)
+            {
+                currentPlayerPos += new Vector3(2.2f, 0f, 0f);
+                row--;
+            }
         }
         if (SwipeManager.swipeRight || Input.GetKeyDown("right"))
         {
-            currentPlayerPos += new Vector3(-2.2f, 0f, 0f);
+            if (row < 5)
+            {
+                currentPlayerPos += new Vector3(-2.2f, 0f, 0f);
+                row++;
+            }
         }
     }
 
-    //Bewegung des Spielers (rechts/links)
+ //Bewegung des Spielers (rechts/links)
     void MovePlayer()
     {
         this.transform.position = Vector3.Lerp(
@@ -45,13 +58,13 @@ public class PlayerMove : MonoBehaviour
                 Time.fixedDeltaTime * playerSpeed);
     }
 
-    //Player wird getroffen und nach hinten versetzt - nach 3 hits GameOver!
+ //Player wird getroffen und nach hinten versetzt - nach 3 hits GameOver.Scene wird geladen!
     public void ObstacleHit()
     {
         hits++;
         currentPlayerPos += new Vector3(0f, 0f, 5f);
-
-        if (hits == 3)
+        
+        if(hits == 3)
         {
             SceneManager.LoadScene("UI_GameOver");
         }
