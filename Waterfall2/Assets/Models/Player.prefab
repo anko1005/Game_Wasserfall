@@ -114,8 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa664a847f72384eb97e59cd87aa667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 4555149154779506571}
-  swipeManager: {fileID: 0}
+  playerSpeed: 0.2
+  healthAmount: 0
+  HitFX: {fileID: 0}
+  FirstAidFX: {fileID: 0}
 --- !u!54 &4201030381376278313
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class UI_GameOverScreen : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Level_1");/*SceneManager.GetActiveScene().buildIndex + 1); falls wir mehr szenen haben*/
+        SceneManager.LoadScene("Level_1_12.07");/*SceneManager.GetActiveScene().buildIndex + 1); falls wir mehr szenen haben*/
     }
 
     public void BackMainMenu()

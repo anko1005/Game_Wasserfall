@@ -16,6 +16,10 @@ public class PlayerMove : MonoBehaviour
 
     public static bool GameIsPaused = false;
 
+    [Header("ParticleFX")]
+    public GameObject HitFX;
+    public GameObject FirstAidFX;
+
     void Start()
     {
         startPos = this.transform.position;
@@ -67,8 +71,11 @@ public class PlayerMove : MonoBehaviour
     {
         hits++;
         currentPlayerPos += new Vector3(0f, 0f, 5f);
-        
-        if(hits == 3)
+
+        HitFX.SetActive(true);
+        FirstAidFX.SetActive(true);
+
+        if (hits == 3)
         {
             SceneManager.LoadScene("UI_GameOver");
             Time.timeScale = 0f;
