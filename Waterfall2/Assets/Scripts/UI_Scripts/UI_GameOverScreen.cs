@@ -15,11 +15,14 @@ public class UI_GameOverScreen : MonoBehaviour
 
     }*/
 
+    //Restart Game: wird das gleiche Level nochmal geladen.
     public void NewGame()
     {
         SceneManager.LoadScene("Level_1_12.07");/*SceneManager.GetActiveScene().buildIndex + 1); falls wir mehr szenen haben*/
+        Time.timeScale = 1f;
     }
 
+    //EXIT: Zurück zum Hauptmenü wo man neu anfangen kann. 
     public void BackMainMenu()
     {
         SceneManager.LoadScene("UI_MainMenu");
