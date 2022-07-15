@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
     void Spawn()
     {
         obstaclePos = Random.Range(0, SpawnPositions.Length);
-        Instantiate(prefab, SpawnPositions[obstaclePos].position, Quaternion.identity);
+        Instantiate(prefab, SpawnPositions[obstaclePos].position, Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f)));
     }
 }
 

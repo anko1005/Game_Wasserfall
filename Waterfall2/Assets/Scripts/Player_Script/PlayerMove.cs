@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
     private int hits = 0;
     private int row = 3;
     //public Image healthBar;
-    public int healthAmount = 0;
+    
 
     public static bool GameIsPaused = false;
 
@@ -73,7 +73,7 @@ public class PlayerMove : MonoBehaviour
         currentPlayerPos += new Vector3(0f, 0f, 5f);
 
         HitFX.SetActive(true);
-        FirstAidFX.SetActive(true);
+        
 
         if (hits == 3)
         {
@@ -83,12 +83,14 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-   /* public void Healing()
-    {
-        
-        if (hit.transform.tag == "Health")
+    public void Healing()
+     {
+        if(hits > 0)
         {
-            healthAmount = healthAmount ++;
+            hits--;
+            currentPlayerPos += new Vector3(0f, 0f, -5f);
         }
-    }*/
+
+        FirstAidFX.SetActive(true);
+     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2048847284066219919}
   - component: {fileID: 4290242651851752261}
   - component: {fileID: 8863007305783946357}
-  - component: {fileID: 7462359412825716827}
+  - component: {fileID: 6727068836886129795}
   - component: {fileID: 8836213607779789422}
   m_Layer: 0
   m_Name: FirstAidKit
@@ -100,7 +100,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7462359412825716827
+--- !u!114 &6727068836886129795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2344964209419559568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1993ded19a296645a7c1a29b17ff330, type: 3}
+  m_Script: {fileID: 11500000, guid: a290ea4e6055bf04a924b2ecadac0b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &8836213607779789422
@@ -123,5 +123,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.11002619, y: 0.16922653, z: 0.06}
-  m_Center: {x: -0.00007549301, y: -0.00022731349, z: 0.03}
+  m_Size: {x: 0.060360283, y: 0.08781843, z: 0.03225466}
+  m_Center: {x: -0.0011422334, y: -0.0009679121, z: 0.01612733}

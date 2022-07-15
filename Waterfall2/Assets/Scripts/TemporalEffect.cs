@@ -21,6 +21,7 @@ public class TemporalEffect : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= Runtime)
         {
+            timer = 0f;
             OnFinish.Invoke();
             gameObject.SetActive(false);
         }
