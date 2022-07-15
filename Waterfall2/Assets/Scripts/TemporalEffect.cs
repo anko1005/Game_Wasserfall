@@ -26,4 +26,8 @@ public class TemporalEffect : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    //public void
+    //if load gameoverscreen play sound
+    //AudioSource.PlayClipAtPoint(deathSound, transform.position);
 }
