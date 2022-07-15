@@ -7305,6 +7305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner_FirstAidKit
       objectReference: {fileID: 0}
+    - target: {fileID: 2846948324272821003, guid: b7a7ab6d96cb6014287e0dbc770a7b79, type: 3}
+      propertyPath: m_TagString
+      value: Health
+      objectReference: {fileID: 0}
     - target: {fileID: 3466737034373357876, guid: b7a7ab6d96cb6014287e0dbc770a7b79, type: 3}
       propertyPath: m_Enabled
       value: 0
