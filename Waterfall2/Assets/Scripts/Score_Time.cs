@@ -12,6 +12,8 @@ public class Score_Time : MonoBehaviour
     public float scoreValue = 0f;
     public float pointIncreacesPerSecond = 1f;
     int score = 0;
+    //public Text highscoretext;
+    //public float highscore;
 
 
     private void Awake ()
