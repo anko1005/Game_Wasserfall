@@ -6127,6 +6127,7 @@ GameObject:
   - component: {fileID: 1395645388}
   - component: {fileID: 1395645390}
   - component: {fileID: 1395645389}
+  - component: {fileID: 1395645391}
   m_Layer: 5
   m_Name: Highscore
   m_TagString: Untagged
@@ -6192,6 +6193,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395645387}
   m_CullTransparentMesh: 1
+--- !u!114 &1395645391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395645387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed4c4fe5c6e1b64da7391bfb569ecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighscoreText: {fileID: 1547790492}
 --- !u!1001 &1486163256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6296,7 +6310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.11764707, g: 0.1137255, b: 0.10588236, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6310,7 +6324,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 175
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -6341,7 +6355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -19}
+  m_AnchoredPosition: {x: -19, y: -29}
   m_SizeDelta: {x: 453.9706, y: 151.6078}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1818121822

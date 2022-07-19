@@ -11,15 +11,29 @@ public class Score_Time : MonoBehaviour
     public Text scoreValueText;
     public float scoreValue = 0f;
     public float pointIncreacesPerSecond = 1f;
-    int score = 0;
+    //int score = 0;
     //public Text highscoretext;
     //public float highscore;
 
+    float lastHighscore;
 
     private void Awake ()
     {
         instance = this;
+        if (PlayerPrefs.HasKey("Highscore"))
+            lastHighscore = PlayerPrefs.GetFloat("Highscore");
+        else
+            lastHighscore = 0f;
     }
+
+    private void OnDisable()
+    {
+        if(scoreValue > lastHighscore)
+        {
+            PlayerPrefs.SetFloat("Highscore", scoreValue);
+        }
+    }
+
     private void FixedUpdate()
     {
         scoreValueText.text = ((int)scoreValue).ToString() + ": Score";
@@ -28,7 +42,7 @@ public class Score_Time : MonoBehaviour
 
     public void AddPoints ()
     {
-        score += 1000;
+        scoreValue += 1000;
         scoreValueText.text = ((int)scoreValue).ToString() + ": Score";
     }
 }

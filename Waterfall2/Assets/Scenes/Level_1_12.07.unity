@@ -6445,16 +6445,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366909151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.058181528, w: 0.9983061}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405540382}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.671}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -253}
+  m_AnchoredPosition: {x: 9, y: -253}
   m_SizeDelta: {x: 516.6616, y: 147.1671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &374401936
@@ -8625,7 +8625,7 @@ MonoBehaviour:
   topTint: {r: 1, g: 1, b: 1, a: 1}
   bottomTint: {r: 0, g: 0, b: 1, a: 1}
   castShadow: 0
-  m_InstantiatedMaterial: {fileID: 1420898051}
+  m_InstantiatedMaterial: {fileID: 1552475343}
 --- !u!4 &643921550
 Transform:
   m_ObjectHideFlags: 0
@@ -8875,7 +8875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnFinish.m_PersistentCalls.m_Calls.Array.size
@@ -8883,6 +8883,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
@@ -8898,11 +8902,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 724626112}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 270962772}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1810599723}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
@@ -8918,6 +8930,10 @@ PrefabInstance:
       value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: AddPoints
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnFinish.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Stop
       objectReference: {fileID: 0}
@@ -8930,6 +8946,10 @@ PrefabInstance:
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Score_Time, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnFinish.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.VFX.VisualEffect, UnityEngine
       objectReference: {fileID: 0}
@@ -8939,6 +8959,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
       propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1083180648288084100, guid: 58641d5e8a658e44ca58266a3cfa02b1, type: 3}
@@ -17268,31 +17292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI_Pause: {fileID: 1416638648}
---- !u!21 &1420898051
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_GrassComputeHLSL(Clone)
-  m_Shader: {fileID: 4800000, guid: 866141128b3a46d488466d1f9be71566, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats:
-    - _AmbientAdjustment: -1
-    - _BlendFloor: 0
-    - _Fade: 0.34
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1442592400
 GameObject:
   m_ObjectHideFlags: 0
@@ -17545,6 +17544,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482963827}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &1552475343
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Custom_GrassComputeHLSL(Clone)
+  m_Shader: {fileID: 4800000, guid: 866141128b3a46d488466d1f9be71566, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _AmbientAdjustment: -1
+    - _BlendFloor: 0
+    - _Fade: 0.34
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1001 &1579623917
 PrefabInstance:
   m_ObjectHideFlags: 0
