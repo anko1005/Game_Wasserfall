@@ -42,7 +42,7 @@ public class Score_Time : MonoBehaviour
 
     public void AddPoints ()
     {
-        scoreValue += 1000;
+        scoreValue += 50;
         scoreValueText.text = ((int)scoreValue).ToString() + ": Score";
     }
 }
