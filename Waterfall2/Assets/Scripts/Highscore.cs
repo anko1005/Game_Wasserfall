@@ -13,7 +13,7 @@ public class Highscore : MonoBehaviour
     void Start()
     {
         if (PlayerPrefs.HasKey("Highscore"))
-            HighscoreText.text = "Nr.1:" + ((int)PlayerPrefs.GetFloat("Highscore")).ToString();
+            HighscoreText.text = "Best: " + ((int)PlayerPrefs.GetFloat("Highscore")).ToString();
 
     }
 
